@@ -32,10 +32,17 @@ public class Triangle {
     /**
      * @requires multiplier > 0
      */
-    public void scale(double multiplier) {
+    public int scale(double multiplier) {
+        if (multiplier == 0) {
+            return 1;
+        }
+        if (multiplier < 0) {
+            return 2;
+        }
         this.a *= multiplier;
         this.b *= multiplier;
         this.c *= multiplier;
+        return 0;
     }
 
     // Options:
