@@ -10,11 +10,11 @@ public class Waves {
         int index = 0;
         while (true) {
             char[] modifier = Character.toChars(modifiers[index % modifiers.length]);
-            System.out.print(Character.toChars(0x1F44B));
+            System.out.print(Character.toChars(0x1F44B)); // hand wave
+            //System.out.print(Character.toChars(0x1F596)); // Vulcan salute
             System.out.print(modifier);
             index++;
-            Thread.sleep(500);
-
+            Thread.sleep(500); // milliseconds
         }
     }
 }

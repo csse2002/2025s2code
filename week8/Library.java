@@ -19,7 +19,8 @@ public class Library {
     }
   }
 
-  static void redistributeKidsBook(ChildFriendlyBookshelf bookshelf, Bookshelf<? super KidsBook> newBookshelf) {
+  static void redistributeKidsBook(ChildFriendlyBookshelf bookshelf,
+                                   Bookshelf<? super KidsBook> newBookshelf) {
     for (KidsBook book : bookshelf.books) {
       newBookshelf.addBook(book);
     }

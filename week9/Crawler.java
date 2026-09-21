@@ -6,10 +6,10 @@ public class Crawler {
         while (true) {
             System.out.print("#");
             Thread.sleep(1000);
-            System.out.print((char) 8);
+            System.out.print("\b"); // \b is the backspace character or ((char) 8);
             System.out.print(" ");
             if (random.nextInt(3) == 1) {
-                System.out.print((char) 13);
+                System.out.print("\r"); // \r is the carriage return character or ((char) 13);
             }
         }
     }
